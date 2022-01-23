@@ -1,0 +1,27 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "miniaudioTest_cmake.exe (miniaudioTest_cmake\\miniaudioTest_cmake.exe)",
+      "name": "miniaudioTest_cmake.exe (miniaudioTest_cmake\\miniaudioTest_cmake.exe)",
+      "args": [
+        "${projectDir}\\miniaudioTest_cmake\\assets\\musicbox.wav"
+      ]
+    },
+    {
+      "type": "cppgdb",
+      "name": "miniaudioTest_cmake (miniaudioTest_cmake\\miniaudioTest_cmake)",
+      "project": "CMakeLists.txt",
+      "projectTarget": "miniaudioTest_cmake (miniaudioTest_cmake\\miniaudioTest_cmake)",
+      "comment": "リモート デバッグを構成する方法について説明します。詳細については、http://aka.ms/vslinuxdebug をご覧ください",
+      "debuggerConfiguration": "gdb",
+      "args": [
+        "$HOME/.vs/${projectDirName}/${workspaceHash}/src/miniaudioTest_cmake/assets/musicbox.wav"
+      ],
+      "env": {}
+    }
+  ]
+}
